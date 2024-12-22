@@ -1,0 +1,63 @@
+/* Style the error message */
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Style the notification */
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50; /* Green initially */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 9999;
+  opacity: 1; /* Start fully visible */
+  transition: opacity 3s ease-out, background-color 3s ease-out; /* Smooth fade-out and color transition */
+}
+
+.notification.fade-out {
+  background-color: #9e9e9e; /* Change to grey */
+  opacity: 0; /* Fade out */
+}
+
+/* Style the upload button */
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #9e9e9e; /* Grey out when uploading */
+  cursor: not-allowed;
+}
+
+/* Style the remove video button */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+/* Style the video player */
+video {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}

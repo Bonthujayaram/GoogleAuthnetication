@@ -1,0 +1,111 @@
+.video-upload-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pe_verify_email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6c63ff; /* Purple tone */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-file-input:hover {
+    background: #4c42cc; /* Darker purple */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-button, .remove-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #4caf50; /* Green */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.upload-button:hover:enabled {
+    background: #388e3c; /* Darker green */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.remove-button {
+    margin-top: 10px;
+    background: #f44336; /* Red */
+}
+
+.remove-button:hover {
+    background: #d32f2f; /* Darker red */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notification {
+    margin-top: 20px;
+    padding: 10px;
+    background: #17a2b8; /* Blue tone */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+video {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
